@@ -16,6 +16,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    position: relative; /*As this is the parent class of .opaque-overlay this class needs to have a position of relative for the position of absolute to be applied correctly to .opaque-overlay*/
+}
+
+.opaque-overlay{
+    position: absolute; /* parent class above need a position of relative to correspond with this absolute position*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .quotes-container{}

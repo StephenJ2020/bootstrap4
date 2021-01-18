@@ -20,8 +20,9 @@ body{
     position: relative; /*As this is the parent class of .opaque-overlay this class needs to have a position of relative for the position of absolute to be applied correctly to .opaque-overlay*/
 }
 
+/*parent class above need a position of relative to correspond with this absolute position*/
 .opaque-overlay{
-    position: absolute; /* parent class above need a position of relative to correspond with this absolute position*/
+    position: absolute; 
     top: 0;
     left: 0;
     height: 100%;
@@ -34,7 +35,7 @@ body{
 .features-container{}
 
 
-/* Block dividers */
+/*** Block dividers ***/
 
 .block-divider{
     width: 75px;
@@ -50,9 +51,34 @@ body{
     width: 35px;
 }
 
-/* Jumbotron */
 
-.jumbotron{  /* overrides Bootstrap properties for jumbotron*/
+/***  Navbar ***/
+
+.navalert-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+/*Override Bootstrap's default navbar class*/
+.navbar{
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.navbar .navbar-toggler{
+    border: 0;
+}
+
+/*** Jumbotron ***/
+
+/*Overrides Bootstrap properties for jumbotron*/
+.jumbotron{  
     background-color: transparent;
 }
 
@@ -73,9 +99,11 @@ body{
     color: #d0d0d0;
 }
 
-/* Buttons */
 
-.btn-cta{ /* cta = call to action */
+/*** Buttons ***/
+
+/*cta = call to action */
+.btn-cta{ 
     font-weight: bold;
     border-radius: 23px;
     width: 160px;

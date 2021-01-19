@@ -95,6 +95,12 @@ body{
     width: 35px;
 }
 
+.block-divider-vertical{
+    width: 5px;
+    height: 75px;
+    border: 0;
+}
+
 
 /*** Content containers ***/
 

@@ -215,10 +215,9 @@ body{
 
 /*** Media queries ***/
 
-/* <!--@media (min-width: 992px) --> 
-@media (min-width: 992px)
-.col-lg-4 .block-divider-vertical{
+
+.col-lg-4{
     -ms-flex: 0 0 30.75%;
     flex: 0 0 30.75%;
     max-width: 30.75%;
-} */ 
+} 
